@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(217, 236, 238);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+.container {
+  background: white;
+  position: relative;
+  width: 100%;
+  min-height: 800px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  max-width: 1000px;
+  box-shadow: 0px 4px 14px 0px rgba(29, 30, 34, 0.24);
+}
+.leftSide {
+  position: relative;
+  background: white;
+  padding: 50px;
+}
+
+.rightSide {
+  position: relative;
+  background: #3d3e42;
+  padding: 50px;
+  min-height: 800px;
+}
+
+.profile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profileImg {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profileImg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile h2 {
+  margin-top: 20px;
+  font-size: 2 em;
+  color: #4a4e51;
+  text-align: center;
+}
+
+hr.line {
+  position: relative;
+  margin-top: 20px;
+  width: 250px;
+  border: 1px solid #66cc99;
+}
+
+.contacts {
+  padding-top: 30px;
+  width: 100%;
+}
+.contacts h3 {
+  color: #4a4e51;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.contacts ul {
+  margin-top: 20px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.contacts ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.contacts ul li .text {
+  color: #3d3e42;
+  font-weight: 400;
+}
+
+.contacts ul li .icon {
+  color: #66cc99;
+  display: inline-block;
+  width: 30px;
+  font-size: 20px;
+}
+
+.experience {
+  background: #3d3e42;
+  width: 100%;
+  float: left;
+  position: relative;
+  min-height: 100%;
+  min-height: 100vh;
+}
+
+.experience-title {
+  color: #66cc99;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.company-wrapper {
+  padding-top: 20px;
+  width: 40%;
+  float: left;
+  text-align: left;
+  padding-right: 5%;
+  margin-bottom: 60px;
+}
+
+.job-wrapper {
+  padding-top: 20px;
+  width: 60%;
+  float: left;
+  text-align: left;
+  padding-right: 5%;
+  margin-bottom: 30px;
+}
+
+.job-title {
+  color: #ffffff;
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.time {
+  color: #9099a0;
+  font-weight: 400;
+}
+.job-description {
+  color: #9099a0;
+  font-weight: 400;
+}
+.rightSide hr {
+  margin-bottom: 30px;
+}
+
+.education-wrapper {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.degree {
+  color: #ffffff;
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.years {
+  color: #9099a0;
+  font-weight: 400;
+}
+.skills {
+  padding-bottom: 20px;
+}
+.box {
+  position: relative;
+  padding-top: 20px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.box h4 {
+  position: relative;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+.box .percent {
+  position: relative;
+  width: 100%;
+  height: 14px;
+  background: #ffffff;
+}
+.box .percent div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: #66cc99;
+}
+
+.interests {
+  padding-bottom: 20px;
+}
+
+.interests ul {
+  margin-top: 20px;
+  position: relative;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.interests ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.interests ul li .icon {
+  color: #66cc99;
+  width: 30px;
+  font-size: 40px;
+}
+
+a:link {
+  color: #3d3e42;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #3d3e42;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #66cc99;
+  text-decoration: none;
+}
+
+a:active {
+  color: #3d3e42;
+  text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    margin: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 400px) {
+  .interests ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .job-title {
+    font-size: 14px;
+  }
+}
